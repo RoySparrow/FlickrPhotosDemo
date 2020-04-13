@@ -15,6 +15,7 @@
 		49912EE52444A75F00AA5411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49912EE32444A75F00AA5411 /* LaunchScreen.storyboard */; };
 		49912EF02444A75F00AA5411 /* FlickrPhotosDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912EEF2444A75F00AA5411 /* FlickrPhotosDemoTests.swift */; };
 		49912EFB2444A75F00AA5411 /* FlickrPhotosDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912EFA2444A75F00AA5411 /* FlickrPhotosDemoUITests.swift */; };
+		49912F0C2444B3A300AA5411 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F0B2444B3A300AA5411 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		49912EF62444A75F00AA5411 /* FlickrPhotosDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrPhotosDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49912EFA2444A75F00AA5411 /* FlickrPhotosDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotosDemoUITests.swift; sourceTree = "<group>"; };
 		49912EFC2444A75F00AA5411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49912F0B2444B3A300AA5411 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				49912EE32444A75F00AA5411 /* LaunchScreen.storyboard */,
 				49912EDE2444A75D00AA5411 /* Main.storyboard */,
 				49912EDC2444A75D00AA5411 /* LaunchViewController.swift */,
+				49912F0B2444B3A300AA5411 /* MainTabBarController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				49912EDD2444A75D00AA5411 /* LaunchViewController.swift in Sources */,
 				49912ED92444A75D00AA5411 /* AppDelegate.swift in Sources */,
+				49912F0C2444B3A300AA5411 /* MainTabBarController.swift in Sources */,
 				49912EDB2444A75D00AA5411 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
