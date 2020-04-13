@@ -16,6 +16,7 @@
 		49912EF02444A75F00AA5411 /* FlickrPhotosDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912EEF2444A75F00AA5411 /* FlickrPhotosDemoTests.swift */; };
 		49912EFB2444A75F00AA5411 /* FlickrPhotosDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912EFA2444A75F00AA5411 /* FlickrPhotosDemoUITests.swift */; };
 		49912F0C2444B3A300AA5411 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F0B2444B3A300AA5411 /* MainTabBarController.swift */; };
+		49912F112444B5A700AA5411 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F102444B5A700AA5411 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		49912EFA2444A75F00AA5411 /* FlickrPhotosDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotosDemoUITests.swift; sourceTree = "<group>"; };
 		49912EFC2444A75F00AA5411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49912F0B2444B3A300AA5411 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		49912F102444B5A700AA5411 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				49912F082444AEFF00AA5411 /* Model */,
 				49912F0A2444AF2500AA5411 /* View */,
 				49912F092444AF0E00AA5411 /* ViewModel */,
+				49912F0F2444B58900AA5411 /* Tool */,
 				49912ED82444A75D00AA5411 /* AppDelegate.swift */,
 				49912EDA2444A75D00AA5411 /* SceneDelegate.swift */,
 				49912EE12444A75F00AA5411 /* Assets.xcassets */,
@@ -153,6 +156,14 @@
 				49912F0B2444B3A300AA5411 /* MainTabBarController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		49912F0F2444B58900AA5411 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				49912F102444B5A700AA5411 /* Logger.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49912F112444B5A700AA5411 /* Logger.swift in Sources */,
 				49912EDD2444A75D00AA5411 /* LaunchViewController.swift in Sources */,
 				49912ED92444A75D00AA5411 /* AppDelegate.swift in Sources */,
 				49912F0C2444B3A300AA5411 /* MainTabBarController.swift in Sources */,
