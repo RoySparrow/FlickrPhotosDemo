@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		49912ED92444A75D00AA5411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912ED82444A75D00AA5411 /* AppDelegate.swift */; };
 		49912EDB2444A75D00AA5411 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912EDA2444A75D00AA5411 /* SceneDelegate.swift */; };
-		49912EDD2444A75D00AA5411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912EDC2444A75D00AA5411 /* ViewController.swift */; };
+		49912EDD2444A75D00AA5411 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912EDC2444A75D00AA5411 /* LaunchViewController.swift */; };
 		49912EE02444A75D00AA5411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49912EDE2444A75D00AA5411 /* Main.storyboard */; };
 		49912EE22444A75F00AA5411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49912EE12444A75F00AA5411 /* Assets.xcassets */; };
 		49912EE52444A75F00AA5411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49912EE32444A75F00AA5411 /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 		49912ED52444A75D00AA5411 /* FlickrPhotosDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrPhotosDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49912ED82444A75D00AA5411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49912EDA2444A75D00AA5411 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		49912EDC2444A75D00AA5411 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49912EDC2444A75D00AA5411 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		49912EDF2444A75D00AA5411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49912EE12444A75F00AA5411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49912EE42444A75F00AA5411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,12 +99,12 @@
 		49912ED72444A75D00AA5411 /* FlickrPhotosDemo */ = {
 			isa = PBXGroup;
 			children = (
+				49912F082444AEFF00AA5411 /* Model */,
+				49912F0A2444AF2500AA5411 /* View */,
+				49912F092444AF0E00AA5411 /* ViewModel */,
 				49912ED82444A75D00AA5411 /* AppDelegate.swift */,
 				49912EDA2444A75D00AA5411 /* SceneDelegate.swift */,
-				49912EDC2444A75D00AA5411 /* ViewController.swift */,
-				49912EDE2444A75D00AA5411 /* Main.storyboard */,
 				49912EE12444A75F00AA5411 /* Assets.xcassets */,
-				49912EE32444A75F00AA5411 /* LaunchScreen.storyboard */,
 				49912EE62444A75F00AA5411 /* Info.plist */,
 			);
 			path = FlickrPhotosDemo;
@@ -126,6 +126,30 @@
 				49912EFC2444A75F00AA5411 /* Info.plist */,
 			);
 			path = FlickrPhotosDemoUITests;
+			sourceTree = "<group>";
+		};
+		49912F082444AEFF00AA5411 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49912F092444AF0E00AA5411 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		49912F0A2444AF2500AA5411 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49912EE32444A75F00AA5411 /* LaunchScreen.storyboard */,
+				49912EDE2444A75D00AA5411 /* Main.storyboard */,
+				49912EDC2444A75D00AA5411 /* LaunchViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49912EDD2444A75D00AA5411 /* ViewController.swift in Sources */,
+				49912EDD2444A75D00AA5411 /* LaunchViewController.swift in Sources */,
 				49912ED92444A75D00AA5411 /* AppDelegate.swift in Sources */,
 				49912EDB2444A75D00AA5411 /* SceneDelegate.swift in Sources */,
 			);

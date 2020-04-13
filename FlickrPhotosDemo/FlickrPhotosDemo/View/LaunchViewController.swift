@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LaunchViewController.swift
 //  FlickrPhotosDemo
 //
 //  Created by Roy Sparrow on 2020/4/13.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LaunchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
 
