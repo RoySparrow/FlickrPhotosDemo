@@ -17,6 +17,7 @@
 		49912EFB2444A75F00AA5411 /* FlickrPhotosDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912EFA2444A75F00AA5411 /* FlickrPhotosDemoUITests.swift */; };
 		49912F0C2444B3A300AA5411 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F0B2444B3A300AA5411 /* MainTabBarController.swift */; };
 		49912F112444B5A700AA5411 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F102444B5A700AA5411 /* Logger.swift */; };
+		49912F192444B9AD00AA5411 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F182444B9AD00AA5411 /* StoryboardInstantiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		49912EFC2444A75F00AA5411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49912F0B2444B3A300AA5411 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		49912F102444B5A700AA5411 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		49912F182444B9AD00AA5411 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,9 +163,18 @@
 		49912F0F2444B58900AA5411 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				49912F152444B7FC00AA5411 /* Protocol */,
 				49912F102444B5A700AA5411 /* Logger.swift */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		49912F152444B7FC00AA5411 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				49912F182444B9AD00AA5411 /* StoryboardInstantiable.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +310,7 @@
 			files = (
 				49912F112444B5A700AA5411 /* Logger.swift in Sources */,
 				49912EDD2444A75D00AA5411 /* LaunchViewController.swift in Sources */,
+				49912F192444B9AD00AA5411 /* StoryboardInstantiable.swift in Sources */,
 				49912ED92444A75D00AA5411 /* AppDelegate.swift in Sources */,
 				49912F0C2444B3A300AA5411 /* MainTabBarController.swift in Sources */,
 				49912EDB2444A75D00AA5411 /* SceneDelegate.swift in Sources */,
