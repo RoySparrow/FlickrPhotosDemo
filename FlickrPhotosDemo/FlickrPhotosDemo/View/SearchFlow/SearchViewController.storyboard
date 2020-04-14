@@ -12,11 +12,56 @@
             <objects>
                 <viewController storyboardIdentifier="SearchViewController" id="XoT-eR-b5o" customClass="SearchViewController" customModule="FlickrPhotosDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VKX-3l-KGg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="欲搜尋內容" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mxz-5P-LJS">
+                                <rect key="frame" x="47" y="286" width="281" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="textFieldEditingChanged:" destination="XoT-eR-b5o" eventType="editingChanged" id="ihf-kT-MF2"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="每頁呈現數量" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BNo-yP-H0M">
+                                <rect key="frame" x="47" y="345" width="281" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldEditingChanged:" destination="XoT-eR-b5o" eventType="editingChanged" id="y8F-ma-CkT"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwp-mc-Ky0">
+                                <rect key="frame" x="47" y="404" width="281" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="搜尋">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchBtnTapped:" destination="XoT-eR-b5o" eventType="touchUpInside" id="NGS-af-HUI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BNo-yP-H0M" firstAttribute="centerY" secondItem="VKX-3l-KGg" secondAttribute="centerY" id="37S-mv-HOn"/>
+                            <constraint firstItem="mxz-5P-LJS" firstAttribute="trailing" secondItem="BNo-yP-H0M" secondAttribute="trailing" id="6VG-IC-llX"/>
+                            <constraint firstItem="BNo-yP-H0M" firstAttribute="width" secondItem="Meb-uN-DH8" secondAttribute="width" multiplier="0.75" id="8UH-Zk-8BF"/>
+                            <constraint firstItem="Pwp-mc-Ky0" firstAttribute="leading" secondItem="BNo-yP-H0M" secondAttribute="leading" id="Gmt-bx-rCX"/>
+                            <constraint firstItem="Pwp-mc-Ky0" firstAttribute="top" secondItem="BNo-yP-H0M" secondAttribute="bottom" constant="25" id="Se1-IE-dpj"/>
+                            <constraint firstItem="mxz-5P-LJS" firstAttribute="leading" secondItem="BNo-yP-H0M" secondAttribute="leading" id="ZMV-cH-HHd"/>
+                            <constraint firstItem="BNo-yP-H0M" firstAttribute="top" secondItem="mxz-5P-LJS" secondAttribute="bottom" constant="25" id="bQs-fL-373"/>
+                            <constraint firstItem="BNo-yP-H0M" firstAttribute="centerX" secondItem="VKX-3l-KGg" secondAttribute="centerX" id="d9Y-ZS-CFf"/>
+                            <constraint firstItem="Pwp-mc-Ky0" firstAttribute="trailing" secondItem="BNo-yP-H0M" secondAttribute="trailing" id="qub-ru-LTA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Meb-uN-DH8"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="amountPerPageInputField" destination="BNo-yP-H0M" id="nk9-Ij-0YE"/>
+                        <outlet property="searchBtn" destination="Pwp-mc-Ky0" id="Bvn-VR-Oc7"/>
+                        <outlet property="searchTextInputField" destination="mxz-5P-LJS" id="efW-hd-fTu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y7G-ev-rUX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

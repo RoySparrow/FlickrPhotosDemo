@@ -10,7 +10,7 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
 
-    private enum TabPageType: Int, CustomStringConvertible {
+    private enum TabPageType: Int, CustomStringConvertible, CaseIterable {
         case search = 0
         case favorite = 1
         
@@ -22,9 +22,31 @@ class MainTabBarController: UITabBarController {
                 return "我的最愛"
             }
         }
+        
+        var getVC: UIViewController {
+            switch self {
+            case .search:
+                return SearchViewController.instantiate()
+            case .favorite:
+                return UIViewController()
+            }
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        initLayout()
+    }
+    
+    private func initLayout() {
+        var tabPageVCs: [UIViewController] = []
+        for type in TabPageType.allCases {
+            let vc = type.getVC
+            let navigationController = UINavigationController(rootViewController: vc)
+            navigationController.tabBarItem = UITabBarItem(title: type.description, image: nil, selectedImage: nil)
+            tabPageVCs.append(navigationController)
+        }
+        viewControllers = tabPageVCs
     }
 }
