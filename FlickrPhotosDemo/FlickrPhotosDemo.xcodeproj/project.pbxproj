@@ -20,6 +20,7 @@
 		49912F142444B6F400AA5411 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F132444B6F400AA5411 /* SearchViewController.swift */; };
 		49912F212444C3A400AA5411 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F202444C3A400AA5411 /* StoryboardInstantiable.swift */; };
 		49912F232444C4CB00AA5411 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49912F222444C4CB00AA5411 /* SearchViewController.storyboard */; };
+		49912F2624460A0100AA5411 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F2524460A0100AA5411 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		49912F132444B6F400AA5411 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		49912F202444C3A400AA5411 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		49912F222444C4CB00AA5411 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
+		49912F2524460A0100AA5411 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 		49912F0F2444B58900AA5411 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				49912F24244609D900AA5411 /* Extension */,
 				49912F1F2444C37100AA5411 /* Protocol */,
 				49912F102444B5A700AA5411 /* Logger.swift */,
 			);
@@ -189,6 +192,14 @@
 				49912F202444C3A400AA5411 /* StoryboardInstantiable.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		49912F24244609D900AA5411 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				49912F2524460A0100AA5411 /* StringExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +338,7 @@
 				49912F112444B5A700AA5411 /* Logger.swift in Sources */,
 				49912EDD2444A75D00AA5411 /* LaunchViewController.swift in Sources */,
 				49912ED92444A75D00AA5411 /* AppDelegate.swift in Sources */,
+				49912F2624460A0100AA5411 /* StringExtension.swift in Sources */,
 				49912F212444C3A400AA5411 /* StoryboardInstantiable.swift in Sources */,
 				49912F0C2444B3A300AA5411 /* MainTabBarController.swift in Sources */,
 				49912EDB2444A75D00AA5411 /* SceneDelegate.swift in Sources */,
