@@ -21,6 +21,8 @@
 		49912F212444C3A400AA5411 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F202444C3A400AA5411 /* StoryboardInstantiable.swift */; };
 		49912F232444C4CB00AA5411 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49912F222444C4CB00AA5411 /* SearchViewController.storyboard */; };
 		49912F2624460A0100AA5411 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F2524460A0100AA5411 /* StringExtension.swift */; };
+		49912F2824460D5D00AA5411 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F2724460D5D00AA5411 /* SearchResultViewController.swift */; };
+		49912F2A24460D7D00AA5411 /* SearchResultViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49912F2924460D7D00AA5411 /* SearchResultViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		49912F202444C3A400AA5411 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		49912F222444C4CB00AA5411 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
 		49912F2524460A0100AA5411 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		49912F2724460D5D00AA5411 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		49912F2924460D7D00AA5411 /* SearchResultViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchResultViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,8 @@
 			children = (
 				49912F132444B6F400AA5411 /* SearchViewController.swift */,
 				49912F222444C4CB00AA5411 /* SearchViewController.storyboard */,
+				49912F2724460D5D00AA5411 /* SearchResultViewController.swift */,
+				49912F2924460D7D00AA5411 /* SearchResultViewController.storyboard */,
 			);
 			path = SearchFlow;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49912F2A24460D7D00AA5411 /* SearchResultViewController.storyboard in Resources */,
 				49912EE52444A75F00AA5411 /* LaunchScreen.storyboard in Resources */,
 				49912EE22444A75F00AA5411 /* Assets.xcassets in Resources */,
 				49912EE02444A75D00AA5411 /* Main.storyboard in Resources */,
@@ -335,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49912F142444B6F400AA5411 /* SearchViewController.swift in Sources */,
+				49912F2824460D5D00AA5411 /* SearchResultViewController.swift in Sources */,
 				49912F112444B5A700AA5411 /* Logger.swift in Sources */,
 				49912EDD2444A75D00AA5411 /* LaunchViewController.swift in Sources */,
 				49912ED92444A75D00AA5411 /* AppDelegate.swift in Sources */,
