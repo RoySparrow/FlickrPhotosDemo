@@ -23,6 +23,9 @@
 		49912F2624460A0100AA5411 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F2524460A0100AA5411 /* StringExtension.swift */; };
 		49912F2824460D5D00AA5411 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F2724460D5D00AA5411 /* SearchResultViewController.swift */; };
 		49912F2A24460D7D00AA5411 /* SearchResultViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49912F2924460D7D00AA5411 /* SearchResultViewController.storyboard */; };
+		49912F2D2447497800AA5411 /* SearchResultCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F2B2447497800AA5411 /* SearchResultCollectionCell.swift */; };
+		49912F2E2447497800AA5411 /* SearchResultCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49912F2C2447497800AA5411 /* SearchResultCollectionCell.xib */; };
+		49912F3224474EDD00AA5411 /* CollectionCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912F3124474EDD00AA5411 /* CollectionCellExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		49912F2524460A0100AA5411 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		49912F2724460D5D00AA5411 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		49912F2924460D7D00AA5411 /* SearchResultViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchResultViewController.storyboard; sourceTree = "<group>"; };
+		49912F2B2447497800AA5411 /* SearchResultCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCollectionCell.swift; sourceTree = "<group>"; };
+		49912F2C2447497800AA5411 /* SearchResultCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCollectionCell.xib; sourceTree = "<group>"; };
+		49912F3124474EDD00AA5411 /* CollectionCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +194,8 @@
 				49912F222444C4CB00AA5411 /* SearchViewController.storyboard */,
 				49912F2724460D5D00AA5411 /* SearchResultViewController.swift */,
 				49912F2924460D7D00AA5411 /* SearchResultViewController.storyboard */,
+				49912F2B2447497800AA5411 /* SearchResultCollectionCell.swift */,
+				49912F2C2447497800AA5411 /* SearchResultCollectionCell.xib */,
 			);
 			path = SearchFlow;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				49912F2524460A0100AA5411 /* StringExtension.swift */,
+				49912F3124474EDD00AA5411 /* CollectionCellExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -316,6 +325,7 @@
 				49912EE52444A75F00AA5411 /* LaunchScreen.storyboard in Resources */,
 				49912EE22444A75F00AA5411 /* Assets.xcassets in Resources */,
 				49912EE02444A75D00AA5411 /* Main.storyboard in Resources */,
+				49912F2E2447497800AA5411 /* SearchResultCollectionCell.xib in Resources */,
 				49912F232444C4CB00AA5411 /* SearchViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,11 +352,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				49912F142444B6F400AA5411 /* SearchViewController.swift in Sources */,
+				49912F3224474EDD00AA5411 /* CollectionCellExtension.swift in Sources */,
 				49912F2824460D5D00AA5411 /* SearchResultViewController.swift in Sources */,
 				49912F112444B5A700AA5411 /* Logger.swift in Sources */,
 				49912EDD2444A75D00AA5411 /* LaunchViewController.swift in Sources */,
 				49912ED92444A75D00AA5411 /* AppDelegate.swift in Sources */,
 				49912F2624460A0100AA5411 /* StringExtension.swift in Sources */,
+				49912F2D2447497800AA5411 /* SearchResultCollectionCell.swift in Sources */,
 				49912F212444C3A400AA5411 /* StoryboardInstantiable.swift in Sources */,
 				49912F0C2444B3A300AA5411 /* MainTabBarController.swift in Sources */,
 				49912EDB2444A75D00AA5411 /* SceneDelegate.swift in Sources */,

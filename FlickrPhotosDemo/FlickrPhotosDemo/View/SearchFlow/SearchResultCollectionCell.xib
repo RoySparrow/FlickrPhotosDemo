@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SearchResultCollectionCell" customModule="FlickrPhotosDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnv-JX-Ema">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bm5-VQ-KMH">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名稱" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXk-pV-oIh">
+                                <rect key="frame" x="0.0" y="150" width="150" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOM-tZ-za6">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="40"/>
+                                <state key="normal" title="加入收藏"/>
+                                <connections>
+                                    <action selector="favoriteBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="GUs-Bl-to8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AXk-pV-oIh" secondAttribute="trailing" id="9v5-Ta-1Vj"/>
+                            <constraint firstAttribute="bottom" secondItem="AXk-pV-oIh" secondAttribute="bottom" id="DfV-iZ-zNi"/>
+                            <constraint firstItem="GOM-tZ-za6" firstAttribute="leading" secondItem="gnv-JX-Ema" secondAttribute="leading" id="EwY-eP-voD"/>
+                            <constraint firstItem="GOM-tZ-za6" firstAttribute="height" secondItem="gnv-JX-Ema" secondAttribute="height" multiplier="0.2" id="GFn-U8-aMw"/>
+                            <constraint firstItem="Bm5-VQ-KMH" firstAttribute="leading" secondItem="gnv-JX-Ema" secondAttribute="leading" id="J4h-SW-NWi"/>
+                            <constraint firstItem="GOM-tZ-za6" firstAttribute="top" secondItem="gnv-JX-Ema" secondAttribute="top" id="Lx1-Ke-pfg"/>
+                            <constraint firstItem="GOM-tZ-za6" firstAttribute="width" secondItem="gnv-JX-Ema" secondAttribute="width" multiplier="0.5" id="WvJ-UH-jM9"/>
+                            <constraint firstItem="Bm5-VQ-KMH" firstAttribute="height" secondItem="gnv-JX-Ema" secondAttribute="height" multiplier="0.75" id="bHp-ea-u4v"/>
+                            <constraint firstAttribute="trailing" secondItem="Bm5-VQ-KMH" secondAttribute="trailing" id="q9K-TE-UAY"/>
+                            <constraint firstItem="Bm5-VQ-KMH" firstAttribute="top" secondItem="gnv-JX-Ema" secondAttribute="top" id="tBA-ng-F0H"/>
+                            <constraint firstItem="AXk-pV-oIh" firstAttribute="top" secondItem="Bm5-VQ-KMH" secondAttribute="bottom" id="uZ7-iA-V1m"/>
+                            <constraint firstItem="AXk-pV-oIh" firstAttribute="leading" secondItem="gnv-JX-Ema" secondAttribute="leading" id="wyu-uf-oR2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="gnv-JX-Ema" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="J2J-Ef-roN"/>
+                <constraint firstAttribute="trailing" secondItem="gnv-JX-Ema" secondAttribute="trailing" id="Qgl-uF-81n"/>
+                <constraint firstAttribute="bottom" secondItem="gnv-JX-Ema" secondAttribute="bottom" id="RBz-2C-5uD"/>
+                <constraint firstItem="gnv-JX-Ema" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="c0x-me-RXc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="50" height="144"/>
+            <connections>
+                <outlet property="favoriteBtn" destination="GOM-tZ-za6" id="MS8-y0-6nH"/>
+                <outlet property="imgNameLbl" destination="AXk-pV-oIh" id="hAE-PY-GO1"/>
+                <outlet property="imgView" destination="Bm5-VQ-KMH" id="H2s-mL-NgO"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>

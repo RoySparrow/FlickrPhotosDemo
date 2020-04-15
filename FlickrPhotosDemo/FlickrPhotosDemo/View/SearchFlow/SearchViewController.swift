@@ -15,6 +15,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchBtn: UIButton!
     
     @IBAction func searchBtnTapped(_ sender: UIButton) {
+        pushToSearchResultVC()
     }
     @IBAction func textFieldEditingChanged(_ sender: UITextField) {
         if !String.isEmptyOrNil(searchTextInputField.text) && !String.isEmptyOrNil(amountPerPageInputField.text) {
@@ -62,6 +63,11 @@ class SearchViewController: UIViewController {
     @objc
     private func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    private func pushToSearchResultVC() {
+        let resultVC = SearchResultViewController.instantiate()
+        navigationController?.pushViewController(resultVC, animated: true)
     }
     
     deinit {
